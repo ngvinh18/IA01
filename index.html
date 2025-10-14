@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Target Landing Page</title>
+
+  <!-- ✅ Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ✅ Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ Font Awesome v6 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-TTCTNnZt4C2mA7N7B6mNUp5efjvADoGrxUxxlLPl9mL8fRkRxvD4iVkJRMp0zPzTz6qS6RtZccAgaDdH/X5e8w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/9/9a/Target_logo.svg" />
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-[Inter]">
+
+<!-- 🔺 HEADER -->
+<header class="bg-white shadow-sm">
+  <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+    
+    <!-- ✅ Target logo (đồng bộ với footer) -->
+    <div class="flex items-center space-x-2">
+      <div class="relative w-8 h-8 flex items-center justify-center">
+        <div class="absolute inset-0 rounded-full border-4 border-red-600"></div>
+        <div class="w-4 h-4 rounded-full bg-red-600"></div>
+      </div>
+      <span class="font-bold text-xl text-gray-800 tracking-tight">Target</span>
+      <span class="text-gray-500 text-sm ml-2">Premium landing page template</span>
+    </div>
+
+    <!-- ✅ Contact info -->
+    <div class="text-right text-sm">
+      <span class="text-gray-500 mr-2">Call Now!</span>
+      <span class="text-red-600 font-semibold">1-800-123-456</span>
+    </div>
+
+  </div>
+</header>
+
+  <!-- 🔺 HERO -->
+  <section class="bg-white mt-8 max-w-6xl mx-auto rounded-lg shadow-sm">
+    <div class="grid md:grid-cols-2 gap-8 p-8 items-center">
+
+      <!-- Left content -->
+      <div class="text-center md:text-left">
+        <h1 class="text-3xl md:text-4xl font-semibold text-gray-800 leading-tight mb-4">
+          The perfect way to convert your traffic into <span class="text-orange-500">sales</span>
+        </h1>
+        <p class="text-gray-500 mb-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 justify-center md:justify-start">
+          <button class="bg-orange-500 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-orange-600 transition">
+            Purchase now!
+          </button>
+          <span class="text-gray-400 font-semibold select-none">or</span>
+          <button class="bg-gray-100 text-gray-700 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-200 transition">
+            Take a tour
+          </button>
+        </div>
+      </div>
+
+      <!-- Right image -->
+      <div class="flex justify-center">
+        <div class="w-full max-w-sm aspect-[4/3] bg-gray-200 rounded-lg flex items-center justify-center text-gray-400">
+          [ Image Placeholder ]
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔺 FEATURES -->
+  <section class="max-w-6xl mx-auto mt-12 bg-white rounded-lg shadow-sm p-8">
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div>
+        <div class="w-10 h-10 bg-gray-200 mx-auto mb-3 rounded"></div>
+        <h3 class="font-semibold text-gray-700">Quick and easy</h3>
+        <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </div>
+      <div>
+        <div class="w-10 h-10 bg-gray-200 mx-auto mb-3 rounded"></div>
+        <h3 class="font-semibold text-gray-700">Less risky</h3>
+        <p class="text-gray-500 text-sm mt-2">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+      </div>
+      <div>
+        <div class="w-10 h-10 bg-gray-200 mx-auto mb-3 rounded"></div>
+        <h3 class="font-semibold text-gray-700">Optimized</h3>
+        <p class="text-gray-500 text-sm mt-2">Epsum factorial non deposit quid pro quo hic escorol. Olympian quarrels et gorilla congolium.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔺 CHECK FEATURES -->
+  <section class="max-w-6xl mx-auto mt-12 bg-white rounded-lg shadow-sm p-8">
+    <h2 class="font-semibold text-xl mb-4 text-gray-800">Check out the features</h2>
+    <p class="text-gray-500 mb-4">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </p>
+    <ul class="list-disc ml-6 text-gray-700 space-y-1 marker:text-orange-500">
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetuer adipiscing elit sed diam</li>
+      <li>Nibh euismod tincidunt ut</li>
+      <li>Laoreet dolore magna aliquam erat</li>
+    </ul>
+  </section>
+
+  <!-- 🔺 SCREENSHOTS -->
+  <section class="max-w-6xl mx-auto mt-12 bg-white rounded-lg shadow-sm p-8">
+    <h2 class="font-semibold text-xl mb-6 text-gray-800">The screenshots</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-gray-200 h-32 rounded flex items-center justify-center text-gray-400">Image</div>
+      <div class="bg-gray-200 h-32 rounded flex items-center justify-center text-gray-400">Image</div>
+      <div class="bg-gray-200 h-32 rounded flex items-center justify-center text-gray-400">Image</div>
+      <div class="bg-gray-200 h-32 rounded flex items-center justify-center text-gray-400">Image</div>
+    </div>
+  </section>
+
+  <!-- 🔺 TESTIMONIAL -->
+  <section class="max-w-6xl mx-auto mt-12 bg-white rounded-lg shadow-sm p-8 text-center">
+    <h2 class="font-semibold text-xl mb-4 text-gray-800">See what our customers are saying...</h2>
+    <p class="italic text-gray-500 mb-2">
+      “Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium.”
+    </p>
+    <p class="font-semibold text-gray-800">Mike Tyson, <span class="text-gray-400 font-normal">Microsoft</span></p>
+
+    <div class="mt-6 flex justify-center items-center gap-4">
+      <button class="bg-orange-500 text-white font-semibold px-8 py-3 rounded-full shadow hover:bg-orange-600 transition">Purchase now!</button>
+      <span class="text-gray-400 font-semibold select-none">or</span>
+      <button class="bg-gray-100 text-gray-700 font-semibold px-8 py-3 rounded-full shadow hover:bg-gray-200 transition">Take a tour</button>
+    </div>
+  </section>
+
+<!-- 🔹 FOOTER (Tone dịu hơn, đồng bộ toàn trang) -->
+<footer class="text-gray-500 text-sm font-[Inter] leading-relaxed mt-16">
+
+  <!-- Top Section -->
+  <div class="bg-[#2d2d2d] relative overflow-hidden border-t border-[#3a3a3a]">
+    <!-- ✅ Grid pattern overlay -->
+    <div class="absolute inset-0 opacity-[0.1] pointer-events-none"
+         style="background-image: 
+           linear-gradient(45deg, #000 1px, transparent 1px),
+           linear-gradient(-45deg, #000 1px, transparent 1px);
+           background-size: 30px 30px;">
+    </div>
+
+    <div class="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-6 py-10">
+
+      <!-- Payment -->
+      <div>
+        <h3 class="text-lg text-gray-200 font-semibold mb-3">Payment method</h3>
+        <p class="text-gray-400 text-sm">
+          <strong class="text-gray-200">Ma quande lingues coalesce</strong>, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues.
+        </p>
+        <div class="flex gap-3 mt-4 items-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="h-6 opacity-80 hover:opacity-100 transition">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" class="h-6 opacity-80 hover:opacity-100 transition">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-6 opacity-80 hover:opacity-100 transition">
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="text-lg text-gray-200 font-semibold mb-3">Get in touch</h3>
+        <p>123 Main Street #3<br>San Francisco, CA, 94101</p>
+        <p class="mt-2"><span class="font-semibold text-gray-300">Phone:</span> (866) 123-4567 ext#1</p>
+        <p><span class="font-semibold text-gray-300">FAX:</span> (866) 123-0000</p>
+        <p><span class="font-semibold text-gray-300">Email:</span> webdesign@shegy.pl</p>
+      </div>
+
+      <!-- Design details -->
+      <div>
+        <h3 class="text-lg text-gray-200 font-semibold mb-3">Design details</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
+        </p>
+      </div>
+
+      <!-- Logo -->
+      <div class="flex justify-center md:justify-end items-start">
+        <div class="flex flex-col items-center md:items-end">
+          <div class="flex items-center gap-2">
+            <div class="relative w-8 h-8 flex items-center justify-center">
+              <div class="absolute inset-0 rounded-full border-4 border-red-600"></div>
+              <div class="w-4 h-4 rounded-full bg-red-600"></div>
+            </div>
+            <span class="text-2xl text-gray-200 font-semibold tracking-wide">Target</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="bg-[#1e1e1e] border-t border-[#2a2a2a]">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 py-4">
+      <p class="text-gray-500 text-center md:text-left text-sm">
+        © 2011 <span class="text-gray-300 font-medium">Target</span>. All rights reserved. Design by 
+        <span class="text-orange-400 italic">Shegy</span>.
+      </p>
+
+      <!-- Social icons -->
+      <div class="flex gap-2 mt-4 md:mt-0">
+        <a href="#" class="w-8 h-8 bg-[#2f2f2f] rounded-full flex items-center justify-center hover:bg-[#404040] transition"><i class="fab fa-facebook-f text-gray-300 text-sm"></i></a>
+        <a href="#" class="w-8 h-8 bg-[#2f2f2f] rounded-full flex items-center justify-center hover:bg-[#404040] transition"><i class="fab fa-twitter text-gray-300 text-sm"></i></a>
+        <a href="#" class="w-8 h-8 bg-[#2f2f2f] rounded-full flex items-center justify-center hover:bg-[#404040] transition"><i class="fab fa-linkedin-in text-gray-300 text-sm"></i></a>
+        <a href="#" class="w-8 h-8 bg-[#2f2f2f] rounded-full flex items-center justify-center hover:bg-[#404040] transition"><i class="fab fa-dribbble text-gray-300 text-sm"></i></a>
+        <a href="#" class="w-8 h-8 bg-[#2f2f2f] rounded-full flex items-center justify-center hover:bg-[#404040] transition"><i class="fab fa-youtube text-gray-300 text-sm"></i></a>
+        <a href="#" class="w-8 h-8 bg-[#2f2f2f] rounded-full flex items-center justify-center hover:bg-[#404040] transition"><i class="fas fa-rss text-gray-300 text-sm"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

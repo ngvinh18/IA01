@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Target Landing Page</title>
 
-  <!-- ✅ Tailwind CSS -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- ✅ Google Font -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- ✅ Font Awesome -->
+  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -23,7 +23,7 @@
 
 <body class="bg-[#f6f6f6] text-gray-800 font-[Inter]">
 
-  <!-- 🔺 HEADER -->
+  <!-- HEADER -->
   <header class="bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
       <!-- Logo -->
@@ -41,187 +41,181 @@
     </div>
   </header>
 
-<!-- 🎯 TARGET HERO SLIDER - SLIDE ANIMATION (CSS ONLY) -->
-<section class="max-w-6xl mx-auto mt-8 bg-white rounded-md border border-gray-200 shadow-[0_3px_15px_rgba(0,0,0,0.06)] px-12 py-10 overflow-hidden">
-  <div class="grid md:grid-cols-2 gap-10 items-stretch h-full">
-    
-    <!-- LEFT COLUMN -->
-    <div class="flex flex-col justify-between h-full">
-      <div>
-        <h1 class="text-[36px] font-bold text-gray-800 leading-[1.15] mb-4 font-[Open_Sans]">
-          The perfect way to convert your traffic into <span class="text-[#f47c20]">sales</span>
-        </h1>
+  <!-- HERO SLIDER -->
+  <section class="max-w-6xl mx-auto mt-8 bg-white rounded-md border border-gray-200 shadow-[0_3px_15px_rgba(0,0,0,0.06)] px-12 py-10 overflow-hidden">
+    <div class="grid md:grid-cols-2 gap-10 items-stretch h-full">
+      
+      <!-- LEFT COLUMN -->
+      <div class="flex flex-col justify-between h-full">
+        <div>
+          <h1 class="text-[36px] font-bold text-gray-800 leading-[1.15] mb-4 font-[Open_Sans]">
+            The perfect way to convert your traffic into <span class="text-[#f47c20]">sales</span>
+          </h1>
 
-        <p class="text-gray-500 text-[15px] mb-3 leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-        </p>
-        <p class="text-gray-500 text-[15px] mb-8 leading-relaxed">
-          Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
-        </p>
-      </div>
-
-      <!-- Buttons -->
-      <div class="flex items-center gap-4 mt-auto pb-[2px] pl-8">
-        <button class="bg-gradient-to-b from-[#ffb347] to-[#f47c20] text-white font-semibold text-[16px] px-8 py-3 rounded-full shadow-[0_5px_0_#d46a00] hover:brightness-105 transition">
-          Purchase now!
-        </button>
-        <span class="text-gray-400 font-medium">or</span>
-        <button class="bg-gradient-to-b from-[#f9f9f9] to-[#e8e8e8] text-gray-700 font-semibold text-[16px] px-8 py-3 rounded-full border border-gray-300 shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] hover:brightness-105 transition">
-          Take a tour
-        </button>
-      </div>
-    </div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="relative flex justify-center items-center">
-      <div class="relative w-full max-w-[550px] h-[330px] overflow-hidden rounded-md border border-gray-200 shadow-[0_10px_25px_rgba(0,0,0,0.15)]">
-        
-        <!-- Slides container -->
-        <div class="absolute w-[300%] h-full flex animate-[slideShow_9s_infinite]">
-          <div class="w-1/3 h-full bg-[url('https://picsum.photos/id/1018/550/330')] bg-cover bg-center"></div>
-          <div class="w-1/3 h-full bg-[url('https://picsum.photos/id/1025/550/330')] bg-cover bg-center"></div>
-          <div class="w-1/3 h-full bg-[url('https://picsum.photos/id/1035/550/330')] bg-cover bg-center"></div>
+          <p class="text-gray-500 text-[15px] mb-3 leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          </p>
+          <p class="text-gray-500 text-[15px] mb-8 leading-relaxed">
+            Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+          </p>
         </div>
 
+        <!-- BUTTONS -->
+        <div class="flex items-center gap-4 mt-auto pb-[2px] pl-8">
+          <button class="relative px-10 py-3 rounded-full font-semibold text-[17px] text-[#a14000]
+                         bg-gradient-to-b from-[#ffb93f] to-[#ff6500]
+                         shadow-[inset_0_1px_0_#fff,0_5px_0_#c74e00,0_8px_15px_rgba(0,0,0,0.3)]
+                         hover:brightness-110 hover:translate-y-[-1px]
+                         active:translate-y-[3px] active:shadow-[inset_0_1px_0_#fff,0_2px_0_#c74e00,0_4px_8px_rgba(0,0,0,0.3)]
+                         transition-all duration-150">
+            Purchase now!
+          </button>
+
+          <span class="text-gray-700 font-medium">or</span>
+
+          <button class="relative px-10 py-3 rounded-full font-semibold text-[17px] text-[#444]
+                         bg-gradient-to-b from-[#fdfdfd] to-[#dcdcdc]
+                         border border-[#bbb]
+                         shadow-[inset_0_1px_0_#fff,0_3px_6px_rgba(0,0,0,0.2)]
+                         hover:brightness-105 hover:translate-y-[-1px]
+                         active:translate-y-[2px] active:shadow-[inset_0_1px_0_#fff,0_1px_3px_rgba(0,0,0,0.3)]
+                         transition-all duration-150">
+            Take a tour
+          </button>
+        </div>
       </div>
 
-      <!-- Fake arrows (decorative) -->
-      <div class="absolute left-[-28px] top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-500 w-10 h-10 rounded-full flex items-center justify-center shadow">
-        <i class="fa-solid fa-chevron-left text-[14px]"></i>
-      </div>
-      <div class="absolute right-[-28px] top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-500 w-10 h-10 rounded-full flex items-center justify-center shadow">
-        <i class="fa-solid fa-chevron-right text-[14px]"></i>
+      <!-- RIGHT COLUMN -->
+      <div class="relative flex justify-center items-center">
+        <div class="relative w-full max-w-[550px] h-[330px] overflow-hidden rounded-md border border-gray-200 shadow-[0_10px_25px_rgba(0,0,0,0.15)]">
+          <div class="absolute w-[300%] h-full flex animate-[slideShow_9s_infinite]">
+            <div class="w-1/3 h-full bg-[url('https://picsum.photos/id/1018/550/330')] bg-cover bg-center"></div>
+            <div class="w-1/3 h-full bg-[url('https://picsum.photos/id/1025/550/330')] bg-cover bg-center"></div>
+            <div class="w-1/3 h-full bg-[url('https://picsum.photos/id/1035/550/330')] bg-cover bg-center"></div>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <div class="absolute left-[-28px] top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-500 w-10 h-10 rounded-full flex items-center justify-center shadow hover:scale-110 transition">
+          <i class="fa-solid fa-chevron-left text-[14px]"></i>
+        </div>
+        <div class="absolute right-[-28px] top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-500 w-10 h-10 rounded-full flex items-center justify-center shadow hover:scale-110 transition">
+          <i class="fa-solid fa-chevron-right text-[14px]"></i>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ✅ CSS ANIMATION -->
-<style>
-@keyframes slideShow {
-  0%   { transform: translateX(0%); }
-  33%  { transform: translateX(0%); }
-  40%  { transform: translateX(-33.333%); }
-  73%  { transform: translateX(-33.333%); }
-  80%  { transform: translateX(-66.666%); }
-  100% { transform: translateX(-66.666%); }
-}
-</style>
+  <!-- CSS ANIMATION -->
+  <style>
+  @keyframes slideShow {
+    0%   { transform: translateX(0%); }
+    33%  { transform: translateX(0%); }
+    40%  { transform: translateX(-33.333%); }
+    73%  { transform: translateX(-33.333%); }
+    80%  { transform: translateX(-66.666%); }
+    100% { transform: translateX(-66.666%); }
+  }
+  </style>
 
-  <!-- 🔺 FEATURES -->
-<section class="max-w-6xl mx-auto mt-8 bg-white border border-gray-200 rounded-md shadow-sm p-8">
-  <div class="grid md:grid-cols-3 gap-10 pt-3.5">
-
-    
-    <!-- Feature 1 -->
-    <div class="flex items-start space-x-4">
-      <div class="w-[60px] h-[60px] bg-white rounded-[4px] flex items-center justify-center flex-shrink-0 mt-[-9px]">
-        <i class="fa-solid fa-desktop text-gray-400 text-[30px]"></i>
+  <!-- FEATURES -->
+  <section class="max-w-6xl mx-auto mt-8 bg-white border border-gray-200 rounded-md shadow-sm p-8">
+    <div class="grid md:grid-cols-3 gap-10 pt-3.5">
+      <!-- Feature 1 -->
+      <div class="flex items-start space-x-4">
+        <div class="w-[60px] h-[60px] bg-white rounded-[4px] flex items-center justify-center flex-shrink-0 mt-[-9px]">
+          <i class="fa-solid fa-desktop text-gray-400 text-[30px]"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-800 text-[17px] mb-1">Quick and easy</h3>
+          <p class="text-gray-500 text-[15px] leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            laoreet dolore magna aliquam erat volutpat.
+          </p>
+        </div>
       </div>
+
+      <!-- Feature 2 -->
+      <div class="flex items-start space-x-4">
+        <div class="w-[60px] h-[60px] bg-white rounded-[4px] flex items-center justify-center flex-shrink-0 mt-[-9px]">
+          <i class="fa-solid fa-arrow-pointer text-gray-400 text-[30px]"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-800 text-[17px] mb-1">Less risky</h3>
+          <p class="text-gray-500 text-[15px] leading-relaxed">
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+            eu feugiat nulla facilisis at vero eros et accumsan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="flex items-start space-x-4">
+        <div class="w-[60px] h-[60px] bg-white rounded-[4px] flex items-center justify-center flex-shrink-0 mt-[-9px]">
+          <i class="fa-solid fa-gauge text-gray-400 text-[30px]"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-800 text-[17px] mb-1">Optimized</h3>
+          <p class="text-gray-500 text-[15px] leading-relaxed">
+            Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad
+            nauseum. Souvlaki ignitus carborundum e pluribus unum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE LIST -->
+  <section class="max-w-6xl mx-auto mt-8 bg-white border border-gray-200 rounded-md shadow-sm px-10 py-12">
+    <div class="grid md:grid-cols-[58%_42%] gap-[32px] items-start">
       <div>
-        <h3 class="font-semibold text-gray-800 text-[17px] mb-1">Quick and easy</h3>
-        <p class="text-gray-500 text-[15px] leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-          laoreet dolore magna aliquam erat volutpat.
+        <h2 class="text-[18px] font-semibold text-gray-800 mb-3">Check out the features</h2>
+        <p class="text-gray-600 leading-relaxed mb-4 text-[15px]">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+        </p>
+        <p class="text-gray-600 leading-relaxed text-[15px]">
+          Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+          Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay.
+          Marquee selectus non provisio incongruous feline nolo contendere.
+          Gratuitous octopus niacin, sodium glutimate.
         </p>
       </div>
-    </div>
 
-    <!-- Feature 2 -->
-    <div class="flex items-start space-x-4">
-      <div class="w-[60px] h-[60px] bg-white rounded-[4px] flex items-center justify-center flex-shrink-0 mt-[-9px]">
-        <i class="fa-solid fa-arrow-pointer text-gray-400 text-[30px]"></i>
-      </div>
-      <div>
-        <h3 class="font-semibold text-gray-800 text-[17px] mb-1">Less risky</h3>
-        <p class="text-gray-500 text-[15px] leading-relaxed">
-          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
-          eu feugiat nulla facilisis at vero eros et accumsan.
-        </p>
-      </div>
-    </div>
-
-    <!-- Feature 3 -->
-    <div class="flex items-start space-x-4">
-      <div class="w-[60px] h-[60px] bg-white rounded-[4px] flex items-center justify-center flex-shrink-0 mt-[-9px]">
-        <i class="fa-solid fa-gauge text-gray-400 text-[30px]"></i>
-      </div>
-      <div>
-        <h3 class="font-semibold text-gray-800 text-[17px] mb-1">Optimized</h3>
-        <p class="text-gray-500 text-[15px] leading-relaxed">
-          Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad
-          nauseum. Souvlaki ignitus carborundum e pluribus unum.
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-<!-- 🔺 FEATURE LIST -->
-<section class="max-w-6xl mx-auto mt-8 bg-white border border-gray-200 rounded-md shadow-sm px-10 py-12">
-  <div class="grid md:grid-cols-[58%_42%] gap-[32px] items-start">
-    
-    <!-- Left column -->
-    <div>
-      <h2 class="text-[18px] font-semibold text-gray-800 mb-3">Check out the features</h2>
-      <p class="text-gray-600 leading-relaxed mb-4 text-[15px]">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-        Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
-      </p>
-      <p class="text-gray-600 leading-relaxed text-[15px]">
-        Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
-        Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay.
-        Marquee selectus non provisio incongruous feline nolo contendere.
-        Gratuitous octopus niacin, sodium glutimate.
-      </p>
-    </div>
-
-    <!-- Right column -->
-    <div class="pt-[30px] flex justify-center">
-      <div class="w-[88%]">
-        <ul class="divide-y divide-gray-200">
-          
-          <!-- Item -->
-          <li class="flex items-center py-[8px] pl-[4px]">
-            <div class="w-[15px] h-[15px] flex items-center justify-center border-2 border-gray-300 bg-white rounded-full mr-[8px]">
-              <i class="fa-solid fa-angle-right text-gray-400 text-[9px]"></i>
-            </div>
-            <a href="#" class="text-[#f17b27] text-[14px] hover:underline">Lorem ipsum dolor sit amet</a>
-          </li>
-
-          <li class="flex items-center py-[8px] pl-[4px]">
-            <div class="w-[15px] h-[15px] flex items-center justify-center border-2 border-gray-300 bg-white rounded-full mr-[8px]">
-              <i class="fa-solid fa-angle-right text-gray-400 text-[9px]"></i>
-            </div>
-            <a href="#" class="text-[#f17b27] text-[14px] hover:underline">Consectetuer adipiscing elit sed diam</a>
-          </li>
-
-          <li class="flex items-center py-[8px] pl-[4px]">
-            <div class="w-[15px] h-[15px] flex items-center justify-center border-2 border-gray-300 bg-white rounded-full mr-[8px]">
-              <i class="fa-solid fa-angle-right text-gray-400 text-[9px]"></i>
-            </div>
-            <a href="#" class="text-[#f17b27] text-[14px] hover:underline">Nibh euismod tincidunt ut</a>
-          </li>
-
-          <li class="flex items-center py-[8px] pl-[4px]">
-            <div class="w-[15px] h-[15px] flex items-center justify-center border-2 border-gray-300 bg-white rounded-full mr-[8px]">
-              <i class="fa-solid fa-angle-right text-gray-400 text-[9px]"></i>
-            </div>
-            <a href="#" class="text-[#f17b27] text-[14px] hover:underline">Laoreet dolore magna aliquam erat</a>
-          </li>
-        </ul>
+      <div class="pt-[30px] flex justify-center">
+        <div class="w-[88%]">
+          <ul class="divide-y divide-gray-200">
+            <li class="flex items-center py-[8px] pl-[4px]">
+              <div class="w-[15px] h-[15px] flex items-center justify-center border-2 border-gray-300 bg-white rounded-full mr-[8px]">
+                <i class="fa-solid fa-angle-right text-gray-400 text-[9px]"></i>
+              </div>
+              <a href="#" class="text-[#f17b27] text-[14px] hover:underline">Lorem ipsum dolor sit amet</a>
+            </li>
+            <li class="flex items-center py-[8px] pl-[4px]">
+              <div class="w-[15px] h-[15px] flex items-center justify-center border-2 border-gray-300 bg-white rounded-full mr-[8px]">
+                <i class="fa-solid fa-angle-right text-gray-400 text-[9px]"></i>
+              </div>
+              <a href="#" class="text-[#f17b27] text-[14px] hover:underline">Consectetuer adipiscing elit sed diam</a>
+            </li>
+            <li class="flex items-center py-[8px] pl-[4px]">
+              <div class="w-[15px] h-[15px] flex items-center justify-center border-2 border-gray-300 bg-white rounded-full mr-[8px]">
+                <i class="fa-solid fa-angle-right text-gray-400 text-[9px]"></i>
+              </div>
+              <a href="#" class="text-[#f17b27] text-[14px] hover:underline">Nibh euismod tincidunt ut</a>
+            </li>
+            <li class="flex items-center py-[8px] pl-[4px]">
+              <div class="w-[15px] h-[15px] flex items-center justify-center border-2 border-gray-300 bg-white rounded-full mr-[8px]">
+                <i class="fa-solid fa-angle-right text-gray-400 text-[9px]"></i>
+              </div>
+              <a href="#" class="text-[#f17b27] text-[14px] hover:underline">Laoreet dolore magna aliquam erat</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-
-
-  <!-- 🔺 SCREENSHOTS -->
+  <!-- SCREENSHOTS -->
   <section class="max-w-6xl mx-auto mt-8 bg-white border border-gray-200 rounded-md shadow-sm p-8">
     <h2 class="font-semibold text-lg mb-4 text-gray-800">The screenshots</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -232,33 +226,45 @@
     </div>
   </section>
 
-<!-- 🔺 TESTIMONIAL (đã đồng bộ style nút với Hero) -->
-<section class="max-w-6xl mx-auto mt-8 bg-white border border-gray-200 rounded-md shadow-sm p-8 text-center">
-  <h2 class="font-semibold text-lg mb-4 text-gray-800">See what our customers are saying...</h2>
-  
-  <blockquote class="italic text-gray-500 mb-3">
-    “Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. 
-    Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium.”
-  </blockquote>
-  
-  <p class="font-semibold text-gray-800">
-    Mike Tyson, <span class="text-gray-400 font-normal">Microsoft</span>
-  </p>
+  <!-- TESTIMONIAL -->
+  <section class="max-w-6xl mx-auto mt-8 bg-white border border-gray-200 rounded-md shadow-sm p-8 text-center">
+    <h2 class="font-semibold text-lg mb-4 text-gray-800">See what our customers are saying...</h2>
 
-  <!-- 🔸 Buttons (đã chỉnh giống Hero) -->
-  <div class="mt-6 flex justify-center items-center gap-4">
-    <button class="bg-gradient-to-b from-[#ffb347] to-[#f47c20] text-white font-semibold text-[16px] px-8 py-3 rounded-full shadow-[0_5px_0_#d46a00] hover:brightness-105 transition">
-      Purchase now!
-    </button>
-    <span class="text-gray-400 font-medium">or</span>
-    <button class="bg-gradient-to-b from-[#f9f9f9] to-[#e8e8e8] text-gray-700 font-semibold text-[16px] px-8 py-3 rounded-full border border-gray-300 shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] hover:brightness-105 transition">
-      Take a tour
-    </button>
-  </div>
-</section>
+    <blockquote class="italic text-gray-500 mb-3">
+      “Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. 
+      Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium.”
+    </blockquote>
 
+    <p class="font-semibold text-gray-800">
+      Mike Tyson, <span class="text-gray-400 font-normal">Microsoft</span>
+    </p>
 
-  <!-- 🔹 FOOTER -->
+    <!-- BUTTONS -->
+    <div class="flex items-center justify-center gap-4 mt-6 pb-[2px]">
+      <button class="relative px-10 py-3 rounded-full font-semibold text-[17px] text-[#a14000]
+                     bg-gradient-to-b from-[#ffb93f] to-[#ff6500]
+                     shadow-[inset_0_1px_0_#fff,0_5px_0_#c74e00,0_8px_15px_rgba(0,0,0,0.3)]
+                     hover:brightness-110 hover:translate-y-[-1px]
+                     active:translate-y-[3px] active:shadow-[inset_0_1px_0_#fff,0_2px_0_#c74e00,0_4px_8px_rgba(0,0,0,0.3)]
+                     transition-all duration-150">
+        Purchase now!
+      </button>
+
+      <span class="text-gray-700 font-medium">or</span>
+
+      <button class="relative px-10 py-3 rounded-full font-semibold text-[17px] text-[#444]
+                     bg-gradient-to-b from-[#fdfdfd] to-[#dcdcdc]
+                     border border-[#bbb]
+                     shadow-[inset_0_1px_0_#fff,0_3px_6px_rgba(0,0,0,0.2)]
+                     hover:brightness-105 hover:translate-y-[-1px]
+                     active:translate-y-[2px] active:shadow-[inset_0_1px_0_#fff,0_1px_3px_rgba(0,0,0,0.3)]
+                     transition-all duration-150">
+        Take a tour
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="mt-10 text-gray-400 text-sm font-[Inter]">
     <div class="bg-[#2b2b2b] border-t border-[#383838]">
       <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 px-6 py-10">
@@ -271,7 +277,6 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-6 opacity-80 hover:opacity-100 transition">
           </div>
         </div>
-
         <div>
           <h3 class="text-gray-200 font-semibold mb-3">Get in touch</h3>
           <p>123 Main Street #3<br>San Francisco, CA, 94101</p>
@@ -279,12 +284,10 @@
           <p><span class="text-gray-300 font-medium">FAX:</span> (866) 123-0000</p>
           <p><span class="text-gray-300 font-medium">Email:</span> webdesign@shegy.pl</p>
         </div>
-
         <div>
           <h3 class="text-gray-200 font-semibold mb-3">Design details</h3>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
         </div>
-
         <div class="flex justify-center md:justify-end items-start">
           <div class="flex flex-col items-center md:items-end">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Target_logo.svg" class="w-8 h-8 mb-2" alt="Target logo">
@@ -300,7 +303,6 @@
           © 2011 <span class="text-gray-300 font-medium">Target</span>. All rights reserved. Design by
           <span class="text-[#f47c20] italic">Shegy</span>.
         </p>
-
         <div class="flex gap-2 mt-4 md:mt-0">
           <a href="#" class="w-8 h-8 bg-[#2f2f2f] rounded-full flex items-center justify-center hover:bg-[#3a3a3a] transition"><i class="fab fa-facebook-f text-gray-300 text-sm"></i></a>
           <a href="#" class="w-8 h-8 bg-[#2f2f2f] rounded-full flex items-center justify-center hover:bg-[#3a3a3a] transition"><i class="fab fa-twitter text-gray-300 text-sm"></i></a>
@@ -312,5 +314,6 @@
       </div>
     </div>
   </footer>
+
 </body>
 </html>

@@ -41,31 +41,72 @@
     </div>
   </header>
 
-  <!-- 🔺 HERO -->
-  <section class="max-w-6xl mx-auto mt-8 bg-white rounded-md border border-gray-200 shadow-sm p-8">
-    <div class="grid md:grid-cols-2 gap-8 items-center">
+<!-- 🎯 TARGET HERO SLIDER - SLIDE ANIMATION (CSS ONLY) -->
+<section class="max-w-6xl mx-auto mt-8 bg-white rounded-md border border-gray-200 shadow-[0_3px_15px_rgba(0,0,0,0.06)] px-12 py-10 overflow-hidden">
+  <div class="grid md:grid-cols-2 gap-10 items-stretch h-full">
+    
+    <!-- LEFT COLUMN -->
+    <div class="flex flex-col justify-between h-full">
       <div>
-        <h1 class="text-3xl font-semibold text-gray-800 mb-4 leading-tight">
+        <h1 class="text-[36px] font-bold text-gray-800 leading-[1.15] mb-4 font-[Open_Sans]">
           The perfect way to convert your traffic into <span class="text-[#f47c20]">sales</span>
         </h1>
-        <p class="text-gray-500 mb-6">
+
+        <p class="text-gray-500 text-[15px] mb-3 leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
-        <div class="flex items-center gap-4">
-          <button class="bg-[#f47c20] text-white font-semibold px-6 py-2.5 rounded-full shadow hover:bg-[#e56e18] transition">
-            Purchase now!
-          </button>
-          <span class="text-gray-400 font-medium">or</span>
-          <button class="bg-gray-100 text-gray-700 font-semibold px-6 py-2.5 rounded-full border border-gray-300 shadow-sm hover:bg-gray-200 transition">
-            Take a tour
-          </button>
-        </div>
+        <p class="text-gray-500 text-[15px] mb-8 leading-relaxed">
+          Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.
+        </p>
       </div>
-      <div class="flex justify-center">
-        <img src="https://picsum.photos/seed/target/500/300" alt="Hero Image" class="rounded-md border border-gray-200 shadow-sm">
+
+      <!-- Buttons -->
+      <div class="flex items-center gap-4 mt-auto pb-[2px] pl-8">
+        <button class="bg-gradient-to-b from-[#ffb347] to-[#f47c20] text-white font-semibold text-[16px] px-8 py-3 rounded-full shadow-[0_5px_0_#d46a00] hover:brightness-105 transition">
+          Purchase now!
+        </button>
+        <span class="text-gray-400 font-medium">or</span>
+        <button class="bg-gradient-to-b from-[#f9f9f9] to-[#e8e8e8] text-gray-700 font-semibold text-[16px] px-8 py-3 rounded-full border border-gray-300 shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] hover:brightness-105 transition">
+          Take a tour
+        </button>
       </div>
     </div>
-  </section>
+
+    <!-- RIGHT COLUMN -->
+    <div class="relative flex justify-center items-center">
+      <div class="relative w-full max-w-[550px] h-[330px] overflow-hidden rounded-md border border-gray-200 shadow-[0_10px_25px_rgba(0,0,0,0.15)]">
+        
+        <!-- Slides container -->
+        <div class="absolute w-[300%] h-full flex animate-[slideShow_9s_infinite]">
+          <div class="w-1/3 h-full bg-[url('https://picsum.photos/id/1018/550/330')] bg-cover bg-center"></div>
+          <div class="w-1/3 h-full bg-[url('https://picsum.photos/id/1025/550/330')] bg-cover bg-center"></div>
+          <div class="w-1/3 h-full bg-[url('https://picsum.photos/id/1035/550/330')] bg-cover bg-center"></div>
+        </div>
+
+      </div>
+
+      <!-- Fake arrows (decorative) -->
+      <div class="absolute left-[-28px] top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-500 w-10 h-10 rounded-full flex items-center justify-center shadow">
+        <i class="fa-solid fa-chevron-left text-[14px]"></i>
+      </div>
+      <div class="absolute right-[-28px] top-1/2 -translate-y-1/2 bg-white border border-gray-300 text-gray-500 w-10 h-10 rounded-full flex items-center justify-center shadow">
+        <i class="fa-solid fa-chevron-right text-[14px]"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ CSS ANIMATION -->
+<style>
+@keyframes slideShow {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(0%); }
+  40%  { transform: translateX(-33.333%); }
+  73%  { transform: translateX(-33.333%); }
+  80%  { transform: translateX(-66.666%); }
+  100% { transform: translateX(-66.666%); }
+}
+</style>
 
   <!-- 🔺 FEATURES -->
 <section class="max-w-6xl mx-auto mt-8 bg-white border border-gray-200 rounded-md shadow-sm p-8">
@@ -191,19 +232,31 @@
     </div>
   </section>
 
-  <!-- 🔺 TESTIMONIAL -->
-  <section class="max-w-6xl mx-auto mt-8 bg-white border border-gray-200 rounded-md shadow-sm p-8 text-center">
-    <h2 class="font-semibold text-lg mb-4 text-gray-800">See what our customers are saying...</h2>
-    <blockquote class="italic text-gray-500 mb-3">
-      “Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium.”
-    </blockquote>
-    <p class="font-semibold text-gray-800">Mike Tyson, <span class="text-gray-400 font-normal">Microsoft</span></p>
-    <div class="mt-6 flex justify-center items-center gap-4">
-      <button class="bg-[#f47c20] text-white font-semibold px-8 py-2.5 rounded-full shadow hover:bg-[#e56e18] transition">Purchase now!</button>
-      <span class="text-gray-400 font-medium">or</span>
-      <button class="bg-gray-100 text-gray-700 font-semibold px-8 py-2.5 rounded-full border border-gray-300 shadow-sm hover:bg-gray-200 transition">Take a tour</button>
-    </div>
-  </section>
+<!-- 🔺 TESTIMONIAL (đã đồng bộ style nút với Hero) -->
+<section class="max-w-6xl mx-auto mt-8 bg-white border border-gray-200 rounded-md shadow-sm p-8 text-center">
+  <h2 class="font-semibold text-lg mb-4 text-gray-800">See what our customers are saying...</h2>
+  
+  <blockquote class="italic text-gray-500 mb-3">
+    “Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. 
+    Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium.”
+  </blockquote>
+  
+  <p class="font-semibold text-gray-800">
+    Mike Tyson, <span class="text-gray-400 font-normal">Microsoft</span>
+  </p>
+
+  <!-- 🔸 Buttons (đã chỉnh giống Hero) -->
+  <div class="mt-6 flex justify-center items-center gap-4">
+    <button class="bg-gradient-to-b from-[#ffb347] to-[#f47c20] text-white font-semibold text-[16px] px-8 py-3 rounded-full shadow-[0_5px_0_#d46a00] hover:brightness-105 transition">
+      Purchase now!
+    </button>
+    <span class="text-gray-400 font-medium">or</span>
+    <button class="bg-gradient-to-b from-[#f9f9f9] to-[#e8e8e8] text-gray-700 font-semibold text-[16px] px-8 py-3 rounded-full border border-gray-300 shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] hover:brightness-105 transition">
+      Take a tour
+    </button>
+  </div>
+</section>
+
 
   <!-- 🔹 FOOTER -->
   <footer class="mt-10 text-gray-400 text-sm font-[Inter]">
